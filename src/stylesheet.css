@@ -1,0 +1,473 @@
+:root {
+    --text_color: rgb(254, 254, 255);
+    --general_background_color: rgb(25, 32, 39);
+    --panel_background_color: rgb(32, 38, 46);
+    --another_background_color: rgb(33, 39, 47);
+    --onhover_color: rgb(254, 137, 68);
+    --background_image: url(./src/assets/fortnite3-removebg-preview.png);
+    --special_color_1: rgb(125, 52, 237);
+    --add_button_bgcolor: rgb(69, 73, 81);
+    --center_color: rgb(254, 137, 68);
+    --button_background: rgb(51, 57, 63);
+}
+:root::-webkit-scrollbar{
+    display: none;
+}
+a {
+    text-decoration: none;
+    cursor: pointer
+}
+
+a:visited {
+    text-decoration: none;
+    color: var(--text_color);
+}
+
+a:hover {
+    color: var(--onhover_color);
+}
+button{
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    position: absolute;
+    top: 20%;
+    left:30%;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    width: 40%;
+    height: 300px;
+    background-color: transparent;
+    color: var(--text_color);
+    border-radius: 10%;
+}
+
+.submit {
+    margin: 10px;
+}
+
+.login_form>* {
+    text-align: center;
+}
+
+.login_form>input {
+    width: 80%;
+}
+
+a:hover {
+    color: var(--onhover_color);
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    ;
+    margin: 0%;
+    color: var(--text_color);
+    background-color: var(--general_background_color);
+}
+
+#content {
+    padding: 5%;
+}
+
+button {
+    background-color: var(--general_background_color);
+    color: var(--text_color);
+}
+
+#panel {
+    display: grid;
+    border-radius: 10px;
+    background-color: var(--panel_background_color);
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    width: 100%;
+    margin: 0%;
+    margin-bottom: 10%;
+}
+
+@media screen and (max-width:690px) {
+    #name{
+        order: -1;
+        width: 100%;
+    }
+    /* #header>*{
+        width: 100%;
+    }*/
+} 
+@media screen and (max-width: 1040px) {
+    #panel {
+        grid-template-columns: 50% 50%;
+    }
+
+    #right {
+        grid-column: 1/3;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #panel {
+        display:block;
+        /* background-color: var(--panel_background_color); */
+   }
+}
+
+#panel>* {
+    height: 500px;
+    overflow: auto;
+}
+
+#left {
+    overflow: hidden;
+}
+
+#left>* {
+    padding-left: 20px;
+    margin: 50px;
+}
+
+#left>a {
+    position: relative;
+    top: 3%;
+    padding: 0%;
+    margin: 0%;
+}
+
+#left>button {
+    background-color: var(--panel_background_color);
+    border-radius: 40px;
+    text-align: center;
+    font-size: 12px;
+    padding: 12px 24px;
+}
+
+#big_font_text {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+#big_font_text>b {
+    color: var(--special_color_1);
+}
+
+#small_font_text {
+    font-size: 15px;
+    margin-top: 0%;
+    padding-top: 0%;
+    margin-bottom: 20px;
+}
+
+#create_account_container {
+    cursor: pointer;
+    margin-left: 50px;
+    display: inline-block;
+    padding: 0%;
+    margin-top: 0%;
+    width: 150px;
+    height: 50px;
+    background-color: var(--button_background);
+    border-radius: 25px;
+}
+
+#create_account_container>a {
+    position: relative;
+    left: 15%;
+    top: 30%;
+    margin-top: 0%;
+    margin: 0%;
+    color: rgb(254, 254, 255);
+}
+
+#center {
+    background-image: var(--background_image);
+    background-color: var(--center_color);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    /* width: 33%; */
+}
+
+#center>p {
+    color: rgb(254, 254, 255);
+}
+
+#center>h2 {
+    color: rgb(254, 254, 255);
+}
+
+#center>button {
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    left: 30%;
+    top: 5%;
+    background-color: rgba(255, 255, 255, 0.4);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    color: var(--general_background_color);
+    border-style: none;
+    border-radius: 100%;
+}
+
+#time {
+    display: block;
+    margin: auto;
+    width: fit-content;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 25px;
+    background-color: var(--text_color);
+    color: var(--onhover_color);
+}
+
+.displayed_streamer_hidden{
+    display: block;
+    position: relative;
+    width: 15%;
+    height: 15%;
+    background-color: #000000;
+    border-radius: 10%;
+    visibility: hidden;
+}
+
+#displayed_streamer1 {
+    left: 80%;
+}
+
+#displayed_streamer2 {
+    bottom: 18%;
+    left: 20%;
+}
+
+#center>* {
+    text-align: center;
+}
+
+#game_streamers {
+    border-radius: 25px;
+    background-color: var(--another_background_color);
+    display: inline-block;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    background-color: var(--general_background_color);
+}
+
+#bottom {
+    width: 90%;
+    padding: 0%;
+    border: 1px;
+    margin: 5%;
+    margin-top: 0%;
+    height: 40px;
+    color: var(--general_background_color);
+    background-color: var(--text_color);
+    border-radius: 5px;
+}
+#game_streamers>ul::-webkit-scrollbar {
+    display: none;
+  }
+#game_streamers>h5 {
+    margin: 15px;
+    text-align: center;
+}
+
+#bottom_ret_button{
+    float:right;
+    background-color: transparent;
+    color:var(--add_button_bgcolor);
+    border:0px;
+    position: relative;
+    top:10px;
+    right: 20px;
+    padding: 0%;
+    font-size: large;
+}
+
+
+#search_input{
+    height: 38px;
+    border:0px;
+    padding: 0%;
+    width: 80%;
+    position: relative;
+    left: 5px;
+    top:0.5px;
+    outline: none;
+}
+
+#game_streamers>ul{
+    height: 100px;
+    overflow:scroll
+}
+#game_streamers>ul>li {
+    height: 20px;
+    overflow: hidden;
+}
+
+.button_image {
+    width: 40%;
+    float: right;
+}
+
+.icon {
+    display: inline;
+    width: 18px;
+    height: 18px;
+    margin-bottom: 0%;
+}
+
+.add_button {
+    display: inline;
+    background-color: var(--add_button_bgcolor);
+    border-radius: 10%;
+    float: right;
+}
+
+.team_name {
+    display: inline;
+    width: 50px;
+    margin: 0%;
+    margin-left: 4%;
+    overflow: hidden;
+}
+
+.number {
+    float: left;
+    background-color: var(--another_background_color);
+    width: 20px;
+    text-align: center;
+    border-radius: 100%;
+    font-size: smaller;
+}
+
+#options {
+    display: inline-block;
+    height: fit-content;
+    min-width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: var(--general_background_color);
+    border-radius: 24px;
+}
+
+#options>* {
+    width: 32%;
+    padding: 0%;
+    height: 40px;
+    border-radius: 24px;
+    border: none;
+}
+
+.span {
+    display: block;
+    text-align: left;
+    padding: 20px;
+    padding-top: 50px;
+    margin-left: 20px;
+    padding-left: 0%;
+}
+
+
+#header {
+    display: flex;
+    flex-flow:row wrap ;
+    justify-content: space-between;
+    color: var(--text_color);
+    width: 100%;
+    background-color: var(--general_background_color);
+}
+
+#nav_page_l {
+    float: left;
+}
+
+#nav_page_l>li {
+    float: left;
+}
+
+#name {
+    text-align: center;
+    margin: auto;
+}
+
+#account_option_l {
+    float: right;
+}
+
+#account_option_l>li {
+    float: right;
+}
+
+ul {
+    padding: 0%;
+    list-style-type: none;
+    overflow: hidden;
+}
+
+li {
+    margin: 5px;
+}
+
+li>button {
+    border: none;
+}
+
+li>button:hover {
+    /* background-color: #111111; */
+    color: var(--onhover_color);
+}
+
+#flex_categories {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.category {
+    cursor:pointer;
+    text-align: left;
+    width: 300px;
+    height: 100px;
+    background-color: var(--panel_background_color);
+    margin: 10px;
+    border-radius: 5%;
+}
+
+#shooter {
+    background-color: var(--center_color);
+}
+
+
+.category>P {
+    padding-left: 10px;
+}
+
+#shooter>div {
+    position: relative;
+    bottom: 40px;
+    width: 100%;
+    height: 100%;
+    /* display: block; */
+    background-image: url(../images/fortnite3-removebg-preview.png);
+    background-repeat: repeat;
+    background-size: contain;
+    /* background-color: var(--center_color); */
+    opacity: 0.2;
+}
+#shooter>p{
+    position: absolute; 
+}
+.collage_row{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.collage_column{
+    width: 100%;
+    height: 700px;
+}
